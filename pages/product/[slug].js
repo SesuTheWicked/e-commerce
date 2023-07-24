@@ -5,7 +5,7 @@ import { Product } from '@/components';
 import {useStateContext} from '../../context/stateContext';
 import Image from 'next/image';
 
-const productDetails = ({product, products}) => {
+const ProductDetails = ({product, products}) => {
     const {image, name, details, price} = product;
     const [index, setIndex] = useState(0);
 
@@ -120,4 +120,4 @@ export const getStaticProps = async ({params:{slug}}) => {
       props: { products, product }
     }
   }
-export default productDetails;
+export default ProductDetails;
