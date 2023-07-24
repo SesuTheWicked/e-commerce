@@ -96,7 +96,7 @@ return(
             onRemove,
             setCartItems,
             setTotalPrice,
-            setTotalQuantities
+            setTotalQuantities,
         }}>
         {children}
     </Context.Provider>
