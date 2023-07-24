@@ -23,7 +23,8 @@ const handleBuyNow = () =>{
         <div>
 <div className='image-container'>
 <Image 
-alt='great'src={urlFor(image && image[index])}
+alt='great'
+src={urlFor(image && image[index])}
 className='product-detail-image'/>
 </div>
   <div className='small-images-container'>
