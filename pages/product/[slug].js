@@ -21,12 +21,14 @@ const handleBuyNow = () =>{
     <div className='product-detail-container'>
         <div>
 <div className='image-container'>
-<img src={urlFor(image && image[index])}
+<img 
+alt='great'src={urlFor(image && image[index])}
 className='product-detail-image'/>
 </div>
   <div className='small-images-container'>
 {image?.map((item, i) => (
     <img 
+    alt='Image'
     key ={i} 
     src={urlFor(item)}
     className = {i === index ? 'small-image selected' :'small-image'}
