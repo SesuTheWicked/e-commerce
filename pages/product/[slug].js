@@ -3,6 +3,7 @@ import { Client, urlFor } from '../../lib/client'
 import {AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar} from 'react-icons/ai';
 import { Product } from '@/components';
 import {useStateContext} from '../../context/stateContext';
+import Image from 'next/image';
 
 const productDetails = ({product, products}) => {
     const {image, name, details, price} = product;
@@ -21,13 +22,13 @@ const handleBuyNow = () =>{
     <div className='product-detail-container'>
         <div>
 <div className='image-container'>
-<img 
+<Image 
 alt='great'src={urlFor(image && image[index])}
 className='product-detail-image'/>
 </div>
   <div className='small-images-container'>
 {image?.map((item, i) => (
-    <img 
+    <Image 
     alt='Image'
     key ={i} 
     src={urlFor(item)}
