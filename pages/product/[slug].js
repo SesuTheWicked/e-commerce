@@ -22,14 +22,14 @@ const handleBuyNow = () =>{
     <div className='product-detail-container'>
         <div>
 <div className='image-container'>
-<Image 
+<img 
 alt='great'
 src={urlFor(image && image[index])}
 className='product-detail-image'/>
 </div>
   <div className='small-images-container'>
 {image?.map((item, i) => (
-    <Image 
+    <img 
     alt='Image'
     key ={i} 
     src={urlFor(item)}
